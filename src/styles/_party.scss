@@ -1,0 +1,56 @@
+@use 'variables';
+
+.party {
+    padding-top: 30px;
+    background-color: variables.$tercearyBackgroundColor;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 32px;
+        color: variables.$secondaryBackgroundColor;
+    }
+
+    &__content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding: 16px 0;
+
+        &--left {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        &__image {
+            height: 300px;
+        }
+
+        &__description {
+            &__title {
+            }
+
+            &__text {
+                margin-top: 16px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        text-align: justify;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            &--left {
+                text-align: justify;
+            }
+
+            &__image {
+                height: 200px;
+            }
+        }
+    }
+}
