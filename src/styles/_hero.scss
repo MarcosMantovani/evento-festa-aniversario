@@ -32,7 +32,7 @@
         border-bottom: 3px solid variables.$secondaryTextColor;
     }
 
-    &__text {
+    &__title {
         margin: 32px 0;
         font-size: 56px;
     }
@@ -60,5 +60,32 @@
         justify-content: space-between;
         width: 500px;
         margin: 32px auto;
+    }
+
+    @media (max-width: 767px) {
+        &__buttons {
+            display: block;
+            width: auto;
+            
+            &__button {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__counter {
+            &__item {
+                &__number {
+                    font-size: 20px;
+                }
+    
+                &__description {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
