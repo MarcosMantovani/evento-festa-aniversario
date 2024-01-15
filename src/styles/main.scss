@@ -1,11 +1,35 @@
 @use 'variables';
-@use 'header';
 @use 'components/buttons';
+@use 'header';
+@use 'hero';
+
+@font-face {
+    font-family: Lemon;
+    src: url(../assets/fonts/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lemon;
+    src: url(../assets/fonts/LEMONMILK-Bold.otf);
+    font-weight: bold;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Lemon, sans-serif;
     list-style: none;
+    color: variables.$textColor;
+}
+
+body {
+    background-color: rgb(19, 19, 80);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }

@@ -17,6 +17,16 @@
     border: 1px solid variables.$buttonBackgroundColor;
 
     &:hover {
-        background-color: lighten(variables.$buttonBackgroundColor, 3%);
+        background-color: lighten(variables.$buttonBackgroundColor, 10%);
+    }
+
+    &--dark {
+        background-color: rgba(variables.$darkButtonBackgroundColor, 0.8);
+        border-color: variables.$secondaryBackgroundColor;
+
+        &:hover {
+            background-color: variables.$secondaryBackgroundColor;
+            color: variables.$backgroundColor;
+        }
     }
 }

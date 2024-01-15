@@ -8,18 +8,62 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container container">
             <h1>
                 <img class="header__logo" src="images/icons/happy_birthday.png" alt="">
             </h1>
             <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Torne-se um patrocinador</a>
+                </li>
                 <li class="header__links__item">
                     <a href="#" class="button">Participe</a>
                 </li>
             </ul>
         </div>
     </header>
-
+    <section class="hero">
+        <div class="container">
+            <strong class="hero__date">21 de Dezembro de 2024 às 19:00</strong>
+            <h1 class="hero__text">A festa de aniversário mais divertida do Brasil!</h1>
+            <div class="hero__counter" id="counter">
+                <div class="hero__counter__item">
+                    <p>
+                        <span class="hero__counter__item__number" id="counter-day"></span>
+                        <p class="hero__counter__item__description">DIAS</p>
+                    </p>
+                </div>
+                <div class="hero__counter__item">
+                    <p>
+                        <span class="hero__counter__item__number" id="counter-hour"></span>
+                        <p class="hero__counter__item__description">HORAS</p>
+                    </p>
+                </div>
+                <div class="hero__counter__item">
+                    <p>
+                        <span class="hero__counter__item__number" id="counter-minute"></span>
+                        <p class="hero__counter__item__description">MINUTOS</p>
+                    </p>
+                </div>
+                <div class="hero__counter__item">
+                    <p>
+                        <span class="hero__counter__item__number" id="counter-second"></span>
+                        <p class="hero__counter__item__description">SEGUNDOS</p>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <ul class="hero__buttons">
+                    <li class="">
+                        <a href="#" class="button button--dark">Torne-se um patrocinador</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="button">Participe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <script src="scripts/main.js"></script>
 </body>
 </html>
